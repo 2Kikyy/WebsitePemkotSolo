@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 #header {
@@ -14,7 +18,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    min-height: 50px;
 }
 
 #header nav ul li {
@@ -22,17 +25,43 @@
     margin: 0 10px;
 }
 
+#header nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+#header nav ul li a:hover {
+    color: rgb(15, 149, 15);
+}
+
+#header nav ul li button {
+    padding: 10px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgb(15, 149, 15);
+    border: none;
+    border-radius: 5px;
+}
+
+#header nav ul li button:hover {
+    color: rgb(206, 206, 206);
+    background-color: rgb(6, 104, 6);
+}
+
 /* Header */
 @media (max-width: 480px) {
     #header {
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(assets/img/header.png);
+        background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)), url(assets/img/header.png);
         background-position: 30%;
         background-size: cover;
     }
     #header .logo h1 {
         color: #FFF;
-        font-size: 25px;
+        font-size: 22px;
         margin-left: 20px;
     }
 
@@ -40,13 +69,32 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 70px;
+        padding: 15px 0;
         background-color: #00000079;
+        overflow: hidden;
     }
     
     #header nav ul {
-        display: none;
-    }    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 85px;
+        right: -100%;
+        background: #000000da;
+        transition: all .5s;
+    } 
+
+    #header nav ul li {
+        margin: 20px 0;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+    }
 
     #header nav label {
         height: 20px;
@@ -68,17 +116,139 @@
         position: absolute;
         width: 30px;
         height: 30px;
-        top: 14px;
+        top: 24px;
         right: 18px;
+        opacity: 0;
     }
 
     #header .text-center {
-        min-height: 100vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         color: #FFF;
     }
+
+    #header .text-center h2 {
+        font-size: 36px;
+        text-shadow: 0px 0px 25px #000;
+    }
     /* End Header */
+
+    /* Fasilitas */
+    #fasilitas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    #fasilitas h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    #fasilitas img {
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    #fasilitas .bst {
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 12px;
+        background-color:rgb(157, 212, 155);
+        margin-bottom: 30px;
+    }
+
+    #fasilitas .halte {
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 12px;
+        background-color: rgb(157, 212, 155);
+        margin-bottom: 30px;
+    }
+
+    /* End Fasilitas */
+
+    /* Budaya */
+    #budaya {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #budaya h2 {
+        margin-bottom: 20px;
+    }
+
+    #budaya img {
+        width: 300px;
+        border-radius:5px;
+    }
+
+    #budaya div {
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 12px;
+        background-color: rgb(176, 255, 173);
+        margin-bottom: 40px;
+    }
+
+    #budaya button {
+        font-weight: 600;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(15, 149, 15);
+        color: #FFF;
+        margin-top: 10px;
+    }
+
+    #budaya button:hover {
+        background-color: rgb(12, 187, 12);
+    }
+    /* End Budaya */
+
+    /* Wisata */
+    #wisata {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #wisata img {
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    #wisata div {
+        padding: 15px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        background-color:rgb(176, 255, 173);
+    }
+
+    #wisata button {
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        color: #FFF;
+        font-weight: 600;
+        margin-top: 10px;
+        background-color: rgb(15, 149, 15);
+    }
+
+    #wisata button:hover {
+        background-color: rgb(12, 187, 12);
+    }
+    /* End Wisata */
 }
