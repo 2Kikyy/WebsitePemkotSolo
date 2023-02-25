@@ -88,12 +88,9 @@
     margin-top: 10%;
 }
 
-#budaya h2 {
-    margin-bottom: 30px;
-}
-
 #budaya img {
     width: 98%;
+    border-radius: 5px;
 }
 
 #budaya .container {
@@ -109,12 +106,14 @@
     padding: 15px;
     border-radius: 12px;
     background-color:rgb(176, 255, 173);
-    margin-right: 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 40px;
+    transform: scale(1);
+    transition: ease-in-out .3s;
 }
 
-#budaya div:hover {
-    zoom: 1.3;
+#budaya .container div:hover {
+    transform: scale(1.1);
 }
 
 #budaya button {
@@ -135,7 +134,7 @@
 
 /* Fasilitas */
 #fasilitas {
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 0 20px;
     text-align: center;
 }
@@ -167,7 +166,6 @@
 }
 
 #fasilitas div:hover {
-    zoom: 1.1;
 }
 /* End Fasilitas */
 
@@ -175,6 +173,7 @@
 #wisata {
     text-align: center;
     padding: 0 20px;
+    margin-top: 10%;
 }
 
 #wisata img {
@@ -186,6 +185,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #wisata .container div {
@@ -198,7 +198,6 @@
 }
 
 #wisata div:hover {
-    zoom: 1.1;
 }
 
 #wisata button {
@@ -456,12 +455,6 @@
         font-size: 16px;
         padding: 15px;
         border-radius: 12px;
-        margin-right: 20px;
-        margin-bottom: 40px;
-    }
-
-    #budaya div:hover {
-        zoom: 1.1;
     }
 
     #budaya button {
