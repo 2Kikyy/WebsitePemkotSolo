@@ -9,15 +9,35 @@
     scroll-behavior: smooth;
 }
 
+/* Header */
 #header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)), url(assets/img/header.png);
+    color: #FFF;
+}
+
+#header input, span {
+    display: none;
+}
+
+#header nav {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
     display: flex;
-    flex-direction: column;
-    background: #1fc80a;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #0000008a;
+}
+
+#header nav .logo {
+    font-size: 28px;
 }
 
 #header nav ul {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -29,7 +49,7 @@
 #header nav ul li a {
     font-size: 18px;
     text-decoration: none;
-    color: white;
+    color: #FFF;
 }
 
 #header nav ul li a:hover {
@@ -51,6 +71,250 @@
     color: rgb(206, 206, 206);
     background-color: rgb(6, 104, 6);
 }
+
+#header .text-center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    text-align: center;
+}
+/* End Header */
+
+/* Budaya */
+#budaya {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#budaya h2 {
+    margin-bottom: 30px;
+}
+
+#budaya img {
+    width: 98%;
+}
+
+#budaya .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#budaya .container div {
+    width: 40%;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color:rgb(176, 255, 173);
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+#budaya div:hover {
+    zoom: 1.3;
+}
+
+#budaya button {
+    font-weight: 600;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(15, 149, 15);
+    color: #FFF;
+    margin-top: 10px;
+}
+
+#budaya button:hover {
+    background-color: rgb(12, 187, 12);
+    cursor: pointer;
+}
+/* End Budaya */
+
+/* Fasilitas */
+#fasilitas {
+    margin-top: 5%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#fasilitas h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#fasilitas img {
+    width: 98%;
+    border-radius: 5px;
+}
+
+#fasilitas .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#fasilitas .container div {
+    width: 40%;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color:rgb(157, 212, 155);
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+#fasilitas div:hover {
+    zoom: 1.1;
+}
+/* End Fasilitas */
+
+/* Wisata */
+#wisata {
+    text-align: center;
+    padding: 0 20px;
+}
+
+#wisata img {
+    width: 98%;
+    border-radius: 5px;
+}
+
+#wisata .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#wisata .container div {
+    width: 40%;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    background-color:rgb(176, 255, 173);
+}
+
+#wisata div:hover {
+    zoom: 1.1;
+}
+
+#wisata button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: rgb(15, 149, 15);
+}
+
+#wisata button:hover {
+    background-color: rgb(12, 187, 12);
+    cursor: pointer;
+}
+/* End Wisata */
+
+/* About */
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    margin-top: 10%;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+/* End About */
+
+/* Feedback */
+#feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    padding: 0 10%;
+}
+
+#feedback .container {
+    background: rgb(176, 255, 173);
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+#feedback .container .cover-photo {
+    background-image: url(assets/img/solo-safari1.jpg);
+    height: 150px;
+    width: 100%;
+}
+
+#feedback .container .cover-photo .pp {
+    background-color: #c5b3b3;
+    height: 120px;
+    width: 120px;
+    border: 5px solid rgb(176, 255, 173);
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+
+#feedback .container .person-detail {
+    text-align: left;
+    margin-left: 150px;
+}
+
+#feedback .container .name {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+#feedback .container .jabatan {
+    font-size: 12px;
+}
+
+#feedback .container .msg {
+    text-align: left;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+/* End Feedback */
+
+/* Footer */
+#footer {
+    text-align: center;
+    margin-top: 20%;
+    padding: 20px 10%;
+    background-color: rgb(176, 255, 173);
+}
+
+#footer .location-phone {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#footer .for .by img {
+    width: 20px;
+    margin: 3px;
+}
+
+#footer .for .by {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Footer */
 
 /* For Mobile * Tablets */
 @media (max-width: 768px) {
@@ -84,7 +348,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 70%;
+        height: 80%;
         width: 100%;
         position: fixed;
         top: 0px;
@@ -109,6 +373,18 @@
         position: fixed;
         z-index: 990;
         right: 0;
+    }
+
+    #check:checked ~ label span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 4px)
+    }
+
+    #check:checked ~ label span:nth-child(2) {
+        transform: scale(0);
+    }
+
+    #check:checked ~ label span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -3px);
     }
 
     #header nav label {
@@ -151,48 +427,11 @@
     }
     /* End Header */
 
-    /* Fasilitas */
-    #fasilitas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    #fasilitas h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
-    #fasilitas img {
-        width: 98%;
-        border-radius: 5px;
-    }
-
-    #fasilitas div {
-        width: 100%;
-        font-size: 16px;
-        padding: 15px;
-        border-radius: 12px;
-        background-color:rgb(157, 212, 155);
-        margin-bottom: 30px;
-    }
-
-    #fasilitas div:hover {
-        zoom: 1.1;
-    }
-    /* End Fasilitas */
-
+    
     /* Budaya */
     #budaya {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         padding: 0 20px;
+        text-align: center;
     }
 
     #budaya h2 {
@@ -200,17 +439,24 @@
         margin-bottom: 20px;
     }
 
+    #budaya .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
     #budaya img {
         width: 98%;
         border-radius: 5px;
     }
-
-    #budaya div {
-        width: 100%;
+    
+    #budaya .container div {
+        width: 45%;
+        background-color: rgb(176, 255, 173);
         font-size: 16px;
         padding: 15px;
         border-radius: 12px;
-        background-color: rgb(176, 255, 173);
+        margin-right: 20px;
         margin-bottom: 40px;
     }
 
@@ -234,12 +480,51 @@
     }
     /* End Budaya */
 
-    /* Wisata */
-    #wisata {
+    /* Fasilitas */
+    #fasilitas {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        margin-top: 5%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    #fasilitas h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    #fasilitas img {
+        width: 98%;
+        border-radius: 5px;
+    }
+
+    #fasilitas .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #fasilitas .container div {
+        width: 45%;
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 12px;
+        background-color:rgb(157, 212, 155);
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    #fasilitas div:hover {
+        zoom: 1.1;
+    }
+    /* End Fasilitas */
+
+    /* Wisata */
+    #wisata {
+        text-align: center;
         padding: 0 20px;
     }
 
@@ -248,11 +533,18 @@
         border-radius: 5px;
     }
 
-    #wisata div {
-        width: 100%;
+    #wisata .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #wisata .container div {
+        width: 45%;
         padding: 15px;
         border-radius: 12px;
         margin-bottom: 30px;
+        margin-right: 20px;
         background-color:rgb(176, 255, 173);
     }
 
@@ -283,7 +575,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 10%;
         margin-top: 10%;
     }
 
@@ -299,7 +591,7 @@
         align-items: center;
         flex-direction: column;
         margin-top: 10%;
-        padding: 0 20px;
+        padding: 0 10%;
     }
     
     #feedback .container {
@@ -353,7 +645,7 @@
     #footer {
         text-align: center;
         margin-top: 20%;
-        padding: 20px;
+        padding: 20px 10%;
         background-color: rgb(176, 255, 173);
     }
 
@@ -374,4 +666,19 @@
         align-items: center;
     }
     /* End Footer */
+}
+
+/* For Mobile */
+@media (max-width: 480px) {
+    #budaya .container div {
+        width: 80%;
+    }
+
+    #fasilitas .container div {
+        width: 80%;
+    }
+
+    #wisata .container div {
+        width: 80%;
+    }
 }
