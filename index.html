@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css">
     <title>Kota Solo - The Spirit of Java</title>
 </head>
@@ -14,11 +19,11 @@
     <section id="header">
         <nav>
             <div class="logo">
-                <h1>Pemerintah <br/>Kota Solo</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1500">Pemerintah <br/>Kota Solo</h1>
             </div>
 
             <input type="checkbox" id="check">
-            <label for="check">
+            <label for="check" data-aos="fade-left" data-aos-duration="1500">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -44,69 +49,75 @@
             </ul>
         </nav>
 
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
             <h2>Solo<br/>The Spirit of Java</h2>
         </div>
     </section>
     <!-- End Header -->
-
-    <!-- Fasilitas -->
-    <!-- // disini beri fasilitas kyk kemudahan transportasi bst, halte -->
-    <section id="fasilitas">
-        <h2>Fasilitas Umum</h2>
-
-        <div class="bst">
-            <img src="assets/img/bus-bst.png" alt="Bus BST">
-            <h3>Bus BST</h3>
-        </div>
-
-        <div class="halte">
-            <img src="assets/img/halte.jpg" alt="Halte">
-            <h3>Halte</h3>
-        </div>
-    </section>
-    <!-- End Fasilitas -->
-
+    
     <!-- Budaya -->
     <!-- // disini beri tarian serimpi, wayang, kirab tumpeng -->
     <section id="budaya">
         <h2>Budaya</h2>
-        <div class="tari-serimpi">
+        <div class="tari-serimpi" data-aos="zoom-in" data-aos-duration="1500">
             <img src="assets/img/tari-serimpi.jpg" alt="Tari Serimpi">
             <p>Tarian Serimpi</p>
             <button>Lihat Detail</button>
         </div>
         
-        <div class="wayang">
+        <div class="wayang" data-aos="zoom-in" data-aos-duration="1500" delay="200">
             <img src="assets/img/wayang1.jpg" alt="Wayang">
-            <p>Wayang</p>
+            <p>Kesenian Wayang</p>
             <button>Lihat Detail</button>
         </div>
 
-        <div class="kirab-tumpeng">
+        <div class="kirab-tumpeng" data-aos="zoom-in" data-aos-duration="1500" delay="300">
             <img src="assets/img/kirab-tumpeng.jpg" alt="Kirab Tumpeng">
             <p>Kirab Tumpeng</p>
             <button>Lihat Detail</button>
         </div>
     </section>
     <!-- End Budaya -->
+    
+    <!-- Fasilitas -->
+    <!-- // disini beri fasilitas kyk kemudahan transportasi bst, halte -->
+    <section id="fasilitas">
+            <h2>Fasilitas Umum</h2>
+    
+            <div class="bst" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="assets/img/bus-bst.png" alt="Bus BST">
+                <h3>Bus BST</h3>
+            </div>
+    
+            <div class="halte" data-aos="zoom-in" data-aos-duration="1500" delay="200">
+                <img src="assets/img/halte.jpg" alt="Halte">
+                <h3>Halte</h3>
+            </div>
+    
+            <div class="olahraga" data-aos="zoom-in" data-aos-duration="1500" delay="300">
+                <img src="assets/img/manahan.jpg" alt="Stadion Manahan">
+                <h3>Stadion Manahan</h3>
+            </div>
+    </section>
+    <!-- End Fasilitas -->
 
     <!-- Wisata -->
     <!-- // disini beri wisata solo safari, puro mangkunegaran, keraton kasunanan, taman-balekambang -->
     <section id="wisata">
-        <div class="solo-safari">
+        <h2>Wisata</h2>
+        <div class="solo-safari" data-aos="zoom-in" data-aos-duration="1500">
             <img src="assets/img/solo-safari1.jpg" alt="Solo Safari">
             <p>Solo Safari</p>
             <button>Lihat Detail</button>
         </div>
 
-        <div class="mangkunegaran">
+        <div class="mangkunegaran" data-aos="zoom-in" data-aos-duration="1500" delay="200">
             <img src="assets/img/mangkunegaran.jpg" alt="Puro Mangkunegaran">
             <p>Puro Mangkunegaran</p>
             <button>Lihat Detail</button>
         </div>
 
-        <div class="kasunanan">
+        <div class="kasunanan" data-aos="zoom-in" data-aos-duration="1500" delay="300">
             <img src="assets/img/kasunanan.jpg" alt="Keraton Kasunanan">
             <p>Keraton Kasunanan</p>
             <button>Lihat Detail</button>
@@ -116,10 +127,50 @@
 
     <!-- About Solo -->
     <!-- // disini beri deskripsi tentang kota solo -->
+    <section id="about">
+        <h2>About Solo</h2>
+        <p data-aos="fade-down" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus esse explicabo distinctio doloribus ipsam, quidem aliquid consectetur voluptatum dolor a, id assumenda, dolorum officia voluptatibus sequi quam autem commodi quibusdam at mollitia? Soluta deleniti vitae minus perspiciatis iusto mollitia animi non, officia dolor, eligendi repudiandae voluptas necessitatibus tenetur voluptate cumque excepturi eaque consectetur sit corporis, aliquid voluptatem nemo reiciendis incidunt tempora! Veritatis voluptates qui, est iste magni quasi nemo, iure alias corrupti, perspiciatis possimus enim quibusdam incidunt inventore minima voluptate quae. Vel veniam temporibus numquam voluptates modi ut! Ratione facilis neque consequuntur delectus labore sint suscipit laudantium voluptatibus reprehenderit accusamus!
+        </p>
+    </section>
     <!-- End About Solo -->
 
     <!-- Feedback -->
     <!-- // disini beri twitter mas gibran -->
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="cover-photo">
+                <img class="pp" src="assets/img/masgibran-crop.png" alt="Walkot Solo - Gibran Rakabuming">
+            </div>
+            <div class="person-detail">
+                <p class="name">Gibran Rakabuming R.</p>
+                <p class="jabatan">Wali Kota Solo</p>
+            </div>
+            <p class="msg">Enek opo opo langsung tweet aku wae! Ki enek nang ngisor logo tweet enek to penceten.</p>
+            <a href="https://twitter.com/gibran_tweet"><img class="tweeter" src="assets/icons/twitter_48px.png" alt="Tweeter"></a>
+        </div>
+    </section>
     <!-- End Feedback -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="location-phone" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Diskominfo</h2>
+            <p>Jl. Jend. Sudirman No.2, Kota Surakarta, Jawa Tengah</p>
+            <p>Kode Pos 57133</p>
+            <p>(0271) 2931667</p>
+        </div>
+        <div class="for" data-aos="fade-up" data-aos-duration="1500" delay="200">
+            <p class="from"></p>©️ 2023 Dinas Komunikasi, Informatika, Statistik dan Persandian Kota Surakarta</p>
+            <p class="by">Made with<img src="assets/icons/love_52px.png" alt=""> in Solo</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
