@@ -98,6 +98,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0 20px;
     overflow: hidden;
 }
 
@@ -150,11 +151,16 @@
     border-radius: 5px;
 }
 
+#fasilitas .halte img {
+    height: 83%;
+}
+
 #fasilitas .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
+    padding: 30px 10px;
 }
 
 #fasilitas .container div {
@@ -186,10 +192,15 @@
     border-radius: 5px;
 }
 
+#wisata .mangkunegaran img {
+    height: 65%;
+}
+
 #wisata .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 30px 10px;
     overflow: hidden;
 }
 
