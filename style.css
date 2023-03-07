@@ -96,7 +96,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 #budaya img {
@@ -136,7 +135,7 @@
 
 /* Fasilitas */
 #fasilitas {
-    margin-top: 10%;
+    margin-top: 20%;
     text-align: center;
 }
 
@@ -148,7 +147,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 #fasilitas img {
@@ -192,7 +190,7 @@
 
 /* Wisata */
 #wisata {
-    margin-top: 10%;
+    margin-top: 20%;
     text-align: center;
 }
 
@@ -204,7 +202,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 #wisata img {
@@ -248,7 +245,8 @@
 
 /* Berita */
 #berita {
-    padding: 5% 10%;
+    margin-top: 20%;
+    padding: 0 10%;
 }
 
 #berita h2 {
@@ -286,7 +284,7 @@
 
 /* Events */
 #events {
-    margin: 5% 0;
+    margin-top: 20%;
     padding: 0 10%;
 }
 
@@ -400,7 +398,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 10%;
+    padding: 0 10%;
+    margin-top: 20%;
 }
 
 #about h2 {
@@ -414,7 +413,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5% 10%;
+    padding: 0 10%;
+    margin-top: 20%;
 }
 
 #feedback .container {
@@ -660,7 +660,6 @@
     /* Events */
     #events {
         padding: 0 30px;
-        margin: 10% 0;
     }
 
     .content-slide {
@@ -733,6 +732,14 @@
 
     #fasilitas .container div {
         width: 85%;
+    }
+
+    #fasilitas .halte img {
+        height: 200px;
+    }
+
+    #wisata .mangkunegaran img {
+        height: 180px;
     }
 
     #wisata .container div {
